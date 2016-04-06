@@ -4,9 +4,11 @@ import java.util.Objects;
 
 import com.apresentacao.java.auxiliary.Client;
 
-public interface VerifyClient {
+public interface DefaultMethodExample {
 
-	default boolean validate(Client client) {
+	String abstractMethod();
+
+	public default boolean defaultMethod(Client client) {
 
 		if (Objects.isNull(client)) {
 			return false;
